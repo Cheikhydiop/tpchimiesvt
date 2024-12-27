@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="1366.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.projetjavax.SvtControl.TdController">
+    <children>
+        <AnchorPane prefHeight="744.0" prefWidth="1368.0">
+            <children>
+                <AnchorPane layoutY="-1.0" prefHeight="744.0" prefWidth="499.0" style="-fx-background-color: #2B3A7F;">
+                    <children>
+                        <ImageView fitHeight="653.0" fitWidth="445.0" layoutX="32.0" layoutY="90.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../assets/eleve-removebg-preview.png" />
+                            </image>
+                        </ImageView>
+                        <ImageView fitHeight="89.0" fitWidth="134.0" layoutX="14.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../assets/log.png" />
+                            </image>
+                        </ImageView>
+                    </children>
+                </AnchorPane>
+                <AnchorPane layoutX="498.0" prefHeight="668.0" prefWidth="835.0" style="-fx-background-color: #2B3A7F; -fx-background-radius: 4px;">
+                    <children>
+                        <Label fx:id="loginMessageLabel" layoutX="148.0" layoutY="471.0" prefHeight="19.0" prefWidth="427.0" textFill="#f20915">
+                            <font>
+                                <Font name="System Bold" size="13.0" />
+                            </font>
+                        </Label>
+                        <AnchorPane prefHeight="744.0" prefWidth="870.0" style="-fx-border-color: #37465D; -fx-border-width: 4px;">
+                            <children>
+                                <AnchorPane layoutX="-2.0" layoutY="124.0" prefHeight="89.0" prefWidth="855.0" style="-fx-background-color: #C0CFDF;">
+                                    <children>
+                                        <Label alignment="CENTER" layoutX="431.0" layoutY="14.0" prefHeight="42.0" prefWidth="396.0" text="Molecules organiques" textFill="#37465d">
+                                            <font>
+                                                <Font name="Arial Bold" size="36.0" />
+                                            </font>
+                                        </Label>
+                                      <VBox alignment="CENTER" layoutX="63.0" prefHeight="89.0" prefWidth="169.0" style="-fx-background-color: #37465D; -fx-background-radius: 0 0 30px 30px;">
+                                 <children>
+                                              <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="51.0" prefWidth="122.0" text="QCM" textFill="WHITE">
+                                                  <font>
+                                                      <Font name="Bell MT Bold" size="48.0" />
+                                                  </font>
+                                              </Label>
+                                 </children>
+                                      </VBox>
+                                    </children>
+                                </AnchorPane>
+                                <AnchorPane fx:id="anchorPaneId" layoutY="212.0" prefHeight="466.0" prefWidth="855.0" />
+                                <Button fx:id="buttonNext" layoutX="755.0" layoutY="693.0" mnemonicParsing="false" onAction="#onActionNext" prefHeight="32.0" prefWidth="74.0" style="-fx-background-color: #83B5EE;" text="Suivant" textFill="WHITE">
+                                    <font>
+                                        <Font name="System Bold" size="13.0" />
+                                    </font>
+                                </Button>
+                                <ImageView fitHeight="42.0" fitWidth="116.0" layoutX="817.0" layoutY="688.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../assets/right-removebg-preview.png" />
+                                    </image>
+                                </ImageView>
+                        <Button fx:id="idHomm" layoutX="435.0" layoutY="26.0" mnemonicParsing="false" onAction="#onActionHomme" prefHeight="58.0" prefWidth="183.0" style="-fx-background-color: #293779;" text="HOMME" textFill="WHITE">
+                           <font>
+                              <Font name="Bauhaus 93" size="24.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="idd" layoutX="664.0" layoutY="26.0" mnemonicParsing="false" onAction="#onActionDeconnexion" prefHeight="58.0" prefWidth="183.0" style="-fx-background-color: #293779;" text="DECONNXION" textFill="WHITE">
+                           <font>
+                              <Font name="Bauhaus 93" size="24.0" />
+                           </font>
+                        </Button>
+                            </children>
+                        </AnchorPane>
+                    </children>
+                    <effect>
+                        <ColorAdjust />
+                    </effect>
+                </AnchorPane>
+            </children>
+        </AnchorPane>
+    </children>
+</AnchorPane>

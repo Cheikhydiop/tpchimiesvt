@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<?import javafx.scene.image.Image?>
+<AnchorPane prefHeight="600.0" prefWidth="1366.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.projetjavax.homeChimieControl">
+    <children>
+        <AnchorPane prefHeight="743.0" prefWidth="1366.0">
+            <children>
+                <!-- Left Panel -->
+                <AnchorPane layoutY="-1.0" prefHeight="751.0" prefWidth="668.0" style="-fx-background-color: linear-gradient(to bottom, #1a1a1a, #000000);">
+                    <children>
+                        <ImageView fitHeight="653.0" fitWidth="445.0" layoutX="116.0" layoutY="98.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@assets/eleve-removebg-preview.png" />
+                            </image>
+                        </ImageView>
+                        <ImageView fitHeight="89.0" fitWidth="134.0" layoutX="26.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@assets/log.png" />
+                            </image>
+                        </ImageView>
+                    </children>
+                </AnchorPane>
+
+                <!-- Right Panel -->
+                <AnchorPane layoutX="667.0" layoutY="-1.0" prefHeight="751.0" prefWidth="699.0" style="-fx-background-color: #1a1a1a; -fx-background-radius: 15px;">
+                    <children>
+                        <!-- Navigation Buttons -->
+                        <Button fx:id="idHomme" layoutX="182.0" layoutY="23.0" mnemonicParsing="false" onAction="#onActionHomme" prefHeight="62.0" prefWidth="219.0"
+                                style="-fx-background-color: #FFD700; -fx-background-radius: 30; -fx-effect: dropshadow(gaussian, rgba(255,215,0,0.5), 10, 0, 0, 0);"
+                                text="HOME" textFill="#1a1a1a">
+                            <font>
+                                <Font name="System Bold" size="24.0" />
+                            </font>
+                        </Button>
+
+                        <Button fx:id="idd" layoutX="466.0" layoutY="23.0" mnemonicParsing="false" onAction="#onActionDeconnexion"
+                                prefHeight="62.0" prefWidth="201.0"
+                                style="-fx-background-color: transparent; -fx-border-color: #FFD700; -fx-border-radius: 30; -fx-border-width: 2;"
+                                text="DECONNEXION" textFill="#FFD700">
+                            <font>
+                                <Font name="System Bold" size="20.0" />
+                            </font>
+                        </Button>
+
+                        <!-- Course Button -->
+                        <Button layoutX="30.0" layoutY="228.0" mnemonicParsing="false" prefHeight="102.0" prefWidth="640.0"
+                                style="-fx-background-color: #242424; -fx-background-radius: 15; -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.3), 10, 0, 0, 0);" />
+                        <Label fx:id="idC" layoutX="141.0" layoutY="242.0" onMouseClicked="#onActionCour" prefHeight="74.0" prefWidth="505.0"
+                               text="COURS HYDROCARBURE" textFill="#FFD700">
+                            <font>
+                                <Font name="System Bold" size="36.0" />
+                            </font>
+                        </Label>
+
+                        <!-- Practical Work Button -->
+                        <Button layoutX="30.0" layoutY="396.0" mnemonicParsing="false" prefHeight="102.0" prefWidth="640.0"
+                                style="-fx-background-color: #242424; -fx-background-radius: 15; -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.3), 10, 0, 0, 0);" />
+                        <Label fx:id="idT" layoutX="148.0" layoutY="403.0" onMouseClicked="#onActionTp" prefHeight="89.0" prefWidth="519.0"
+                               text="TRAVAUX PRATIQUES" textFill="#FFD700">
+                            <font>
+                                <Font name="System Bold" size="36.0" />
+                            </font>
+                        </Label>
+
+                        <!-- 3D Model Button -->
+                        <Button layoutX="30.0" layoutY="554.0" mnemonicParsing="false" prefHeight="102.0" prefWidth="640.0"
+                                style="-fx-background-color: #242424; -fx-background-radius: 15; -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.3), 10, 0, 0, 0);" />
+                        <Label fx:id="idM" layoutX="148.0" layoutY="561.0" onMouseClicked="#onActionModel" prefHeight="89.0" prefWidth="519.0"
+                               text="MODÈLE 3D" textFill="#FFD700">
+                            <font>
+                                <Font name="System Bold" size="36.0" />
+                            </font>
+                        </Label>
+
+                        <!-- Icons -->
+                        <ImageView fitHeight="89.0" fitWidth="110.0" layoutX="40.0" layoutY="237.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@assets/images.png" />
+                            </image>
+                        </ImageView>
+                        <ImageView fitHeight="102.0" fitWidth="130.0" layoutX="40.0" layoutY="397.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+<!--                                <Image url="@assets/chiimie-removebg-preview%20(1).png" />-->
+                            </image>
+                        </ImageView>
+                        <ImageView fitHeight="102.0" fitWidth="130.0" layoutX="40.0" layoutY="555.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@assets/2151111198-removebg-preview.png" />
+                            </image>
+                        </ImageView>
+                    </children>
+                </AnchorPane>
+            </children>
+        </AnchorPane>
+    </children>
+</AnchorPane>

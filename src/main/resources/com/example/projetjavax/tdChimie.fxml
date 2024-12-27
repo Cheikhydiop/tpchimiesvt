@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="1366.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.projetjavax.TdController">
+    <children>
+        <AnchorPane prefHeight="744.0" prefWidth="1368.0">
+            <children>
+                <AnchorPane layoutY="-1.0" prefHeight="750.0" prefWidth="499.0" style="-fx-background-color: #2B3A7F;">
+                    <children>
+                        <ImageView fitHeight="653.0" fitWidth="445.0" layoutX="7.0" layoutY="2.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@assets/eleve-removebg-preview.png" />
+                            </image>
+                        </ImageView>
+                        <ImageView fitHeight="89.0" fitWidth="134.0" layoutX="22.0" layoutY="34.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@assets/log.png" />
+                            </image>
+                        </ImageView>
+                    </children>
+                </AnchorPane>
+                <AnchorPane layoutX="498.0" prefHeight="749.0" prefWidth="870.0" style="-fx-background-color: #2B3A7F; -fx-background-radius: 4px;">
+                    <children>
+                        <Label fx:id="loginMessageLabel" layoutX="148.0" layoutY="471.0" prefHeight="19.0" prefWidth="427.0" textFill="#f20915">
+                            <font>
+                                <Font name="System Bold" size="13.0" />
+                            </font>
+                        </Label>
+                  <AnchorPane prefHeight="750.0" prefWidth="870.0" style="-fx-border-color: #37465D; -fx-border-width: 4px;">
+                     <children>
+                        <AnchorPane fx:id="anchorPaneId" layoutX="11.0" layoutY="187.0" prefHeight="512.0" prefWidth="845.0" />
+                        <Button fx:id="buttonNext" layoutX="754.0" layoutY="704.0" mnemonicParsing="false" onAction="#onActionNext" prefHeight="32.0" prefWidth="74.0" style="-fx-background-color: #83B5EE;" text="Suivant" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font>
+                        </Button>
+                        <ImageView fitHeight="42.0" fitWidth="116.0" layoutX="816.0" layoutY="699.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@assets/right-removebg-preview.png" />
+                           </image>
+                        </ImageView>
+                        <Button fx:id="idHomme" layoutX="390.0" layoutY="13.0" mnemonicParsing="false" onAction="#onActionHomme" prefHeight="56.0" prefWidth="209.0" style="-fx-background-color: #293779;" text="HOME" textFill="#fcf8f8">
+                           <font>
+                              <Font name="Bauhaus 93" size="24.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="idd" layoutX="656.0" layoutY="13.0" mnemonicParsing="false" onAction="#onActionDeconexion" prefHeight="56.0" prefWidth="195.0" style="-fx-background-color: #293779;" text="DECONNEXION" textFill="#fcf8f8">
+                           <font>
+                              <Font name="Bauhaus 93" size="24.0" />
+                           </font>
+                        </Button>
+                        <AnchorPane layoutX="11.0" layoutY="103.0" prefHeight="56.0" prefWidth="845.0" style="-fx-background-color: #C0CFDF;">
+                           <children>
+                              <Label alignment="CENTER" layoutX="431.0" layoutY="14.0" prefHeight="42.0" prefWidth="396.0" text="Molecules organiques" textFill="#37465d">
+                                 <font>
+                                    <Font name="Arial Bold" size="36.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane layoutX="8.0" layoutY="103.0" prefHeight="82.0" prefWidth="195.0" style="-fx-background-color: #171F45; -fx-background-radius: 0px 0px 40px 40px;">
+                           <children>
+                              <Label layoutX="68.0" layoutY="24.0" text="TD" textFill="#eee5e5">
+                                 <font>
+                                    <Font name="Bauhaus 93" size="48.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </AnchorPane>
+                    </children>
+                    <effect>
+                        <ColorAdjust />
+                    </effect>
+                </AnchorPane>
+            </children>
+        </AnchorPane>
+    </children>
+</AnchorPane>

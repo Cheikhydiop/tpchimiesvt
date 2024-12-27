@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.SubScene?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.media.MediaView?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1366.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.projetjavax.ObjetControl2">
+    <top>
+        <AnchorPane prefHeight="89.0" prefWidth="1400.0" style="-fx-background-color: #2B3A7F;">
+         <children>
+                <ImageView fitHeight="89.0" fitWidth="134.0" layoutX="23.0" layoutY="-10.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@assets/log.png" />
+                    </image>
+                </ImageView>
+            <Button fx:id="idHomme" layoutX="968.0" layoutY="20.0" mnemonicParsing="false" onAction="#onActionHome" prefHeight="49.0" prefWidth="159.0" style="-fx-background-color: #293779;" text="HOME" textFill="#f5f3f3">
+               <font>
+                  <Font name="Bauhaus 93" size="24.0" />
+               </font>
+            </Button>
+            <Button fx:id="idd" layoutX="1180.0" layoutY="18.0" mnemonicParsing="false" onAction="#onActionDeconneexion" prefHeight="54.0" prefWidth="159.0" style="-fx-background-color: #293779;" text="DECONNEXION" textFill="#f8f5f5">
+               <font>
+                  <Font name="Bauhaus 93" size="18.0" />
+               </font>
+            </Button>
+         </children>
+        </AnchorPane>
+    </top>
+    <left>
+        <Pane prefHeight="631.0" prefWidth="400.0" style="-fx-background-color: #2B3A7F;" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="9.0" layoutY="72.0" prefHeight="36.0" prefWidth="390.0" text="Models 3D Alcane">
+               <font>
+                  <Font name="Arial Bold" size="45.0" />
+               </font>
+            </Label>
+            <Button layoutX="7.0" layoutY="138.0" mnemonicParsing="false" prefHeight="107.0" prefWidth="104.0" style="-fx-background-color: #EFEFF0; -fx-border-color: black; -fx-border-width: 3px;" />
+            <ImageView fitHeight="90.0" fitWidth="90.0" layoutX="19.0" layoutY="147.0" onMouseClicked="#onActionMethane" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@alcanes/methane/513px-Methane-CRC-MW-3D-balls-removebg-preview.png" />
+               </image>
+            </ImageView>
+            <Button layoutX="148.0" layoutY="138.0" mnemonicParsing="false" onAction="#onActionEthane" prefHeight="107.0" prefWidth="104.0" style="-fx-background-color: #EFEFF0; -fx-border-color: black; -fx-border-width: 3px;" />
+            <Label layoutX="28.0" layoutY="248.0" text="methane">
+               <font>
+                  <Font name="Algerian" size="13.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="78.0" fitWidth="99.0" layoutX="151.0" layoutY="155.0" onMouseClicked="#onActionEthane" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@alcanes/ethane/Ethane-A-3D-balls-removebg-preview.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="170.0" layoutY="248.0" text="ethane">
+               <font>
+                  <Font name="Algerian" size="13.0" />
+               </font>
+            </Label>
+            <Button layoutX="281.0" layoutY="138.0" mnemonicParsing="false" onAction="#onActionEthane" prefHeight="107.0" prefWidth="104.0" style="-fx-background-color: #EFEFF0; -fx-border-color: black; -fx-border-width: 3px;" />
+            <ImageView fitHeight="78.0" fitWidth="99.0" layoutX="284.0" layoutY="155.0" onMouseClicked="#onActionButhane" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@alcanes/ethane/Ethane-A-3D-balls-removebg-preview.png" />
+               </image>
+            </ImageView>
+            <Button layoutX="282.0" layoutY="459.0" mnemonicParsing="false" onAction="#onActionEthane" prefHeight="107.0" prefWidth="104.0" style="-fx-background-color: #EFEFF0; -fx-border-color: black; -fx-border-width: 3px;" />
+            <ImageView fitHeight="78.0" fitWidth="99.0" layoutX="285.0" layoutY="476.0" onMouseClicked="#onActionEthane" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@alcanes/ethane/Ethane-A-3D-balls-removebg-preview.png" />
+               </image>
+            </ImageView>
+            <Button layoutX="151.0" layoutY="459.0" mnemonicParsing="false" onAction="#onActionEthane" prefHeight="107.0" prefWidth="104.0" style="-fx-background-color: #EFEFF0; -fx-border-color: black; -fx-border-width: 3px;" />
+            <ImageView fitHeight="78.0" fitWidth="99.0" layoutX="154.0" layoutY="476.0" onMouseClicked="#onActionButhene" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@alcanes/ethane/Ethane-A-3D-balls-removebg-preview.png" />
+               </image>
+            </ImageView>
+            <Button layoutX="15.0" layoutY="459.0" mnemonicParsing="false" onAction="#onActionEthane" prefHeight="107.0" prefWidth="104.0" style="-fx-background-color: #EFEFF0; -fx-border-color: black; -fx-border-width: 3px;" />
+            <ImageView fitHeight="78.0" fitWidth="99.0" layoutX="18.0" layoutY="476.0" onMouseClicked="#onActionAcethylene" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@alcanes/ethane/Ethane-A-3D-balls-removebg-preview.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="176.0" layoutY="575.0" text="Buthene">
+               <font>
+                  <Font name="Algerian" size="13.0" />
+               </font>
+            </Label>
+            <Label layoutX="27.0" layoutY="575.0" text="Acethylene">
+               <font>
+                  <Font name="Algerian" size="13.0" />
+               </font>
+            </Label>
+            <Label layoutX="299.0" layoutY="248.0" prefWidth="68.0" text="buthane">
+               <font>
+                  <Font name="Algerian" size="13.0" />
+               </font>
+            </Label>
+            <Label layoutX="310.0" layoutY="575.0" text="ethane">
+               <font>
+                  <Font name="Algerian" size="13.0" />
+               </font>
+            </Label>
+            <Label layoutX="8.0" layoutY="342.0" prefHeight="36.0" prefWidth="390.0" text="Models 3D Alcene">
+               <font>
+                  <Font name="Arial Bold" size="45.0" />
+               </font>
+            </Label>
+         </children>
+        </Pane>
+    </left>
+    <center>
+        <Pane prefHeight="631.0" prefWidth="966.0" BorderPane.alignment="CENTER">
+            <children>
+                <Pane fx:id="mathaneId" prefHeight="631.0" prefWidth="966.0" style="-fx-background-color: #E9E9E9;" visible="false">
+                    <children>
+                        <AnchorPane prefHeight="631.0" prefWidth="946.0" style="-fx-background-color: #E9E9E9;">
+                            <children>
+                                <StackPane prefHeight="631.0" prefWidth="944.0" style="-fx-background-color: #E9E9E9;">
+                                    <children>
+                                        <Pane fx:id="pane" prefHeight="631.0" prefWidth="938.0" style="-fx-background-color: #E9E9E9;">
+                                            <children>
+                                                <SubScene fx:id="subscene" height="631.0" layoutX="10.0" width="934.0">
+                                                    <root>
+                                                        <Region />
+                                                    </root>
+                                                </SubScene>
+                                            </children>
+                                        </Pane>
+                                    </children>
+                                </StackPane>
+                            </children>
+                        </AnchorPane>
+                    </children>
+                </Pane>
+            <Pane fx:id="ethaneId" prefHeight="631.0" prefWidth="966.0" style="-fx-background-color: #E9E9E9;" visible="false">
+               <children>
+                  <AnchorPane prefHeight="631.0" prefWidth="966.0">
+                     <children>
+                        <StackPane prefHeight="631.0" prefWidth="966.0">
+                           <children>
+                              <Pane fx:id="pane1" prefHeight="631.0" prefWidth="966.0" style="-fx-background-color: #E9E9E9;">
+                                 <children>
+                                    <SubScene fx:id="subscene1" height="631.0" layoutX="1.0" width="966.0">
+                                       <root>
+                                          <Region />
+                                       </root>
+                                    </SubScene>
+                                 </children>
+                              </Pane>
+                           </children>
+                        </StackPane>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </Pane>
+            <Pane fx:id="homeId" prefHeight="631.0" prefWidth="966.0" style="-fx-background-color: #E9E9E9;">
+               <children>
+                  <MediaView fx:id="mediaViewId" fitHeight="641.0" fitWidth="966.0" />
+               </children>
+            </Pane>
+            <Pane fx:id="buthaneId" prefHeight="631.0" prefWidth="966.0" style="-fx-background-color: #E9E9E9;" visible="false">
+               <children>
+                  <AnchorPane prefHeight="631.0" prefWidth="966.0">
+                     <children>
+                        <StackPane prefHeight="631.0" prefWidth="966.0">
+                           <children>
+                              <Pane fx:id="pane2" prefHeight="631.0" prefWidth="966.0" style="-fx-background-color: #E9E9E9;">
+                                 <children>
+                                    <SubScene fx:id="subscene2" height="631.0" layoutX="1.0" width="966.0">
+                                       <root>
+                                          <Region />
+                                       </root>
+                                    </SubScene>
+                                 </children>
+                              </Pane>
+                           </children>
+                        </StackPane>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </Pane>
+            <Pane fx:id="acethyleneId" prefHeight="631.0" prefWidth="966.0" style="-fx-background-color: #E9E9E9;" visible="false">
+               <children>
+                  <AnchorPane prefHeight="631.0" prefWidth="966.0">
+                     <children>
+                        <StackPane prefHeight="631.0" prefWidth="966.0">
+                           <children>
+                              <Pane fx:id="pane3" prefHeight="631.0" prefWidth="966.0" style="-fx-background-color: #E9E9E9;">
+                                 <children>
+                                    <SubScene fx:id="subscene3" height="631.0" layoutX="1.0" width="966.0">
+                                       <root>
+                                          <Region />
+                                       </root>
+                                    </SubScene>
+                                 </children>
+                              </Pane>
+                           </children>
+                        </StackPane>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </Pane>
+            <Pane fx:id="butheneId" layoutX="10.0" layoutY="10.0" prefHeight="631.0" prefWidth="966.0" style="-fx-background-color: #E9E9E9;" visible="false">
+               <children>
+                  <AnchorPane prefHeight="631.0" prefWidth="966.0">
+                     <children>
+                        <StackPane prefHeight="631.0" prefWidth="966.0">
+                           <children>
+                              <Pane fx:id="pane4" prefHeight="631.0" prefWidth="966.0" style="-fx-background-color: #E9E9E9;">
+                                 <children>
+                                    <SubScene fx:id="subscene4" height="631.0" layoutX="1.0" width="966.0">
+                                       <root>
+                                          <Region />
+                                       </root>
+                                    </SubScene>
+                                 </children>
+                              </Pane>
+                           </children>
+                        </StackPane>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </Pane>
+            </children></Pane>
+    </center>
+</BorderPane>

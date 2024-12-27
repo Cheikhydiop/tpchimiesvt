@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="1366.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.projetjavax.LoginController">
+    <children>
+        <!-- Background Image avec overlay -->
+        <ImageView fitHeight="600.0" fitWidth="1366.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@assets/hom.png" />
+            </image>
+        </ImageView>
+
+        <!-- Overlay gradient pour meilleure lisibilité -->
+        <AnchorPane prefHeight="600.0" prefWidth="1366.0" style="-fx-background-color: linear-gradient(to right, rgba(71, 118, 230, 0.9), rgba(142, 84, 233, 0.9));" />
+
+        <!-- Contenu principal -->
+        <StackPane prefHeight="600.0" prefWidth="1366.0">
+            <children>
+                <VBox alignment="CENTER" maxWidth="450.0" spacing="20.0" style="-fx-background-color: rgba(255, 255, 255, 0.95); -fx-background-radius: 20; -fx-padding: 40;">
+                    <effect>
+                        <DropShadow color="#00000066" />
+                    </effect>
+
+                    <children>
+                        <ImageView fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@assets/log.png" />
+                            </image>
+                        </ImageView>
+
+                        <Label text="Se connecter" textFill="#2B3A7F">
+                            <font>
+                                <Font name="System Bold" size="32.0" />
+                            </font>
+                        </Label>
+
+                        <TextField fx:id="emailText" maxWidth="350.0" prefHeight="50.0" promptText="Email" style="-fx-background-color: #F5F5F5; -fx-border-radius: 8; -fx-background-radius: 8; -fx-padding: 10;">
+                            <font>
+                                <Font size="14.0" />
+                            </font>
+                        </TextField>
+
+                        <TextField fx:id="passwordText" maxWidth="350.0" prefHeight="50.0" promptText="Mot de passe" style="-fx-background-color: #F5F5F5; -fx-border-radius: 8; -fx-background-radius: 8; -fx-padding: 10;">
+                            <font>
+                                <Font size="14.0" />
+                            </font>
+                        </TextField>
+
+                        <Label fx:id="loginMessageLabel" maxWidth="350.0" textFill="#e74c3c">
+                            <font>
+                                <Font size="13.0" />
+                            </font>
+                        </Label>
+
+                        <Button fx:id="loginId" maxWidth="350.0" mnemonicParsing="false" onAction="#onActionLogin" prefHeight="50.0" style="-fx-background-color: #2B3A7F; -fx-background-radius: 8;" text="Se connecter" textFill="WHITE">
+                            <font>
+                                <Font name="System Bold" size="14.0" />
+                            </font>
+                            <effect>
+                                <DropShadow color="#00000040" />
+                            </effect>
+                        </Button>
+
+                        <Button maxWidth="350.0" mnemonicParsing="false" onAction="#onActionRedirectRegister" prefHeight="50.0" style="-fx-background-color: transparent; -fx-border-color: #2B3A7F; -fx-border-radius: 8;" text="S'inscrire" textFill="#2B3A7F">
+                            <font>
+                                <Font name="System Bold" size="14.0" />
+                            </font>
+                        </Button>
+                    </children>
+                </VBox>
+            </children>
+        </StackPane>
+    </children>
+</AnchorPane>

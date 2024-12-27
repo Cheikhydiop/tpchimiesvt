@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.SubScene?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="720.0" prefWidth="1366.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.projetjavax.ObjetControl2">
+    <children>
+        <AnchorPane prefHeight="89.0" prefWidth="1400.0" style="-fx-background-color: #2B3A7F;">
+            <children>
+                <Button layoutX="273.0" layoutY="17.0" mnemonicParsing="false" prefHeight="55.0" prefWidth="226.0" style="-fx-background-color: #293779;" text="HOME" textFill="#dfe8fa">
+                    <font>
+                        <Font name="Bauhaus 93" size="24.0" />
+                    </font>
+                </Button>
+                <Button layoutX="538.0" layoutY="17.0" mnemonicParsing="false" prefHeight="55.0" prefWidth="226.0" style="-fx-background-color: #293779;" text="TRAVAUX" textFill="#dfe8fa">
+                    <font>
+                        <Font name="Bauhaus 93" size="24.0" />
+                    </font>
+                </Button>
+                <Button layoutX="817.0" layoutY="17.0" mnemonicParsing="false" prefHeight="55.0" prefWidth="226.0" style="-fx-background-color: #293779;" text="MODEL 3D" textFill="#dfe8fa">
+                    <font>
+                        <Font name="Bauhaus 93" size="24.0" />
+                    </font>
+                </Button>
+                <ImageView fitHeight="89.0" fitWidth="134.0" layoutX="23.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@assets/log.png" />
+                    </image>
+                </ImageView>
+            </children>
+        </AnchorPane>
+        <Pane fx:id="vCE" prefHeight="724.0" prefWidth="1114.0" visible="false">
+            <children>
+                <AnchorPane prefHeight="724.0" prefWidth="1112.0">
+                    <children>
+                        <StackPane prefHeight="724.0" prefWidth="1109.0">
+                            <children>
+                                <Pane fx:id="pane" prefHeight="200.0" prefWidth="200.0">
+                                    <children>
+                                        <SubScene fx:id="subscene" height="716.0" layoutX="1.0" width="1108.0">
+                                            <root>
+                                                <Region />
+                                            </root>
+                                        </SubScene>
+                                    </children>
+                                </Pane>
+                            </children>
+                        </StackPane>
+                    </children>
+                </AnchorPane>
+            </children>
+        </Pane>
+
+    </children>
+</AnchorPane>

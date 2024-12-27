@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.PerspectiveCamera?>
+<?import javafx.scene.layout.Pane?>
+
+
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.SubScene?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.control.Button?>
+<Pane prefHeight="472.0" prefWidth="772.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.projetjavax.ObjetController">
+    <Pane prefHeight="724.0" prefWidth="1114.0" visible="false">
+        <children>
+            <AnchorPane prefHeight="724.0" prefWidth="1112.0">
+                <children>
+                    <StackPane prefHeight="724.0" prefWidth="1109.0">
+                        <children>
+                            <Pane fx:id="pane" prefHeight="200.0" prefWidth="200.0">
+                                <children>
+                                    <SubScene fx:id="subscene" height="716.0" layoutX="1.0" width="1108.0">
+                                        <root>
+                                            <Region />
+                                        </root>
+                                    </SubScene>
+                                </children>
+                            </Pane>
+                        </children>
+                    </StackPane>
+                </children>
+            </AnchorPane>
+        </children>
+    </Pane>
+     </Pane>

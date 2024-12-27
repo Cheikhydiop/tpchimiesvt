@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.Group?>
+<?import javafx.scene.SubScene?>
+<?import javafx.scene.PerspectiveCamera?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.shape.Sphere?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+<StackPane xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1"
+           fx:controller="com.example.projetjavax.HomeControlle">
+    <SubScene fx:id="subScene" width="600" height="400">
+        <camera>
+            <PerspectiveCamera fx:id="camera"/>
+        </camera>
+        <root>
+            <Group>
+                <Sphere fx:id="sphere" radius="50" translateX="300" translateY="200" translateZ="0"/>
+            </Group>
+        </root>
+    </SubScene>
+    <SubScene fx:id="subScene2" width="600" height="400">
+        <camera>
+            <PerspectiveCamera fx:id="camera2"/>
+        </camera>
+        <root>
+            <Group>
+                <Sphere fx:id="sphere2" radius="50" translateX="300" translateY="200" translateZ="0"/>
+            </Group>
+        </root>
+    </SubScene>
+    <SubScene fx:id="subScene4" width="600" height="400">
+        <camera>
+            <PerspectiveCamera fx:id="camera3"/>
+        </camera>
+        <root>
+            <Group>
+                <ImageView fx:id="imageId" fitHeight="150.0" fitWidth="200.0" layoutX="241.0" layoutY="139.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@assets/METHANE/methane6-removebg-preview.png" />
+                    </image>
+                </ImageView>
+            </Group>
+        </root>
+    </SubScene>
+</StackPane>

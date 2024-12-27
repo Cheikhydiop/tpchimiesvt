@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="1366.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.projetjavax.ChimieController">
+    <children>
+        <AnchorPane prefHeight="89.0" prefWidth="1366.0" style="-fx-background-color: #2B3A7F;">
+         <children>
+            <Button fx:id="idHomme" layoutX="273.0" layoutY="17.0" mnemonicParsing="false" onAction="#onActionHomme" prefHeight="55.0" prefWidth="226.0" style="-fx-background-color: #293779;" text="HOME" textFill="#dfe8fa">
+               <font>
+                  <Font name="Bauhaus 93" size="24.0" />
+               </font>
+            </Button>
+            <Button layoutX="538.0" layoutY="17.0" mnemonicParsing="false" prefHeight="55.0" prefWidth="226.0" style="-fx-background-color: #293779;" text="TRAVAUX" textFill="#dfe8fa">
+               <font>
+                  <Font name="Bauhaus 93" size="24.0" />
+               </font>
+            </Button>
+            <Button layoutX="817.0" layoutY="17.0" mnemonicParsing="false" prefHeight="55.0" prefWidth="226.0" style="-fx-background-color: #293779;" text="MODEL 3D" textFill="#dfe8fa">
+               <font>
+                  <Font name="Bauhaus 93" size="24.0" />
+               </font>
+            </Button>
+         </children>
+        </AnchorPane>
+        <AnchorPane layoutY="76.0" prefHeight="659.0" prefWidth="1366.0">
+            <children>
+                <AnchorPane layoutY="11.0" prefHeight="656.0" prefWidth="668.0" style="-fx-background-color: #2B3A7F;">
+                    <children>
+                        <ImageView fitHeight="653.0" fitWidth="445.0" layoutX="112.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@assets/eleve-removebg-preview.png" />
+                            </image>
+                        </ImageView>
+                        <ImageView fitHeight="89.0" fitWidth="134.0" layoutX="26.0" layoutY="-87.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@assets/log.png" />
+                            </image>
+                        </ImageView>
+                    </children>
+                </AnchorPane>
+                <AnchorPane layoutX="667.0" prefHeight="667.0" prefWidth="699.0" style="-fx-background-color: #2B3A7F; -fx-background-radius: 4px;">
+                    <children>
+                        <Label fx:id="loginMessageLabel" layoutX="148.0" layoutY="471.0" prefHeight="19.0" prefWidth="427.0" textFill="#f20915">
+                            <font>
+                                <Font name="System Bold" size="13.0" />
+                            </font>
+                        </Label>
+                  <Button fx:id="idGermination" layoutX="12.0" layoutY="196.0" mnemonicParsing="false" onAction="#onActionGermination" prefHeight="102.0" prefWidth="658.0" style="-fx-background-color: #526377;" textFill="#526377" />
+                  <Label alignment="CENTER" layoutX="251.0" layoutY="203.0" prefHeight="89.0" prefWidth="405.0" text="COURS GERMINATION" textFill="#dfe8fa">
+                     <font>
+                        <Font name="Bauhaus 93" size="36.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="89.0" fitWidth="107.0" layoutX="12.0" layoutY="197.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@assets/images-removebg-preview.png" />
+                     </image>
+                  </ImageView>
+                  <Button fx:id="idGermination1" layoutX="12.0" layoutY="369.0" mnemonicParsing="false" onAction="#onActionGermination" prefHeight="102.0" prefWidth="658.0" style="-fx-background-color: #526377;" textFill="#526377" />
+                  <Label alignment="CENTER" layoutX="276.0" layoutY="383.0" prefHeight="74.0" prefWidth="394.0" text="COURS PHOTOSYNTHESE" textFill="#dfe8fa">
+                     <font>
+                        <Font name="Bauhaus 93" size="36.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="102.0" fitWidth="155.0" layoutX="14.0" layoutY="369.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@assets/images-removebg-preview%20(1).png" />
+                     </image>
+                  </ImageView>
+                    </children>
+                    <effect>
+                        <ColorAdjust />
+                    </effect>
+                </AnchorPane>
+            </children>
+        </AnchorPane>
+    </children>
+</AnchorPane>
